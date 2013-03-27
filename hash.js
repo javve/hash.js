@@ -2,18 +2,18 @@
 "use strict";
 
 var hash = (function() {
-    
+
     var fromHash = function() {
         var params = window.location.hash ? window.location.hash.substr(1).split("&") : [],
             paramsObject = {};
-        
+
         for(var i = 0; i < params.length; i++) {
             var a = params[i].split("=");
             paramsObject[a[0]] =  decodeURIComponent(a[1]);
         }
         return paramsObject;
     };
-    
+
     var toHash = function(params) {
         var str = [];
         for(var p in params) {
@@ -21,7 +21,7 @@ var hash = (function() {
         }
         window.location.hash = str.join("&");
     };
-	
+
     return {
         get: function(param) {
             var params = fromHash();
@@ -42,7 +42,7 @@ var hash = (function() {
             removeParams = (typeof(removeParams)=='string') ? [removeParams] : removeParams;
             var params = fromHash();
             for (var i = 0; i < removeParams.length; i++) {
-                delete params[removeParams[i]];   
+                delete params[removeParams[i]];
             }
             toHash(params);
         },

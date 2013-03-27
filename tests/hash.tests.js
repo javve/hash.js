@@ -31,16 +31,16 @@ test('Add three parameter to hash', function() {
 test('Get all', function() {
     deepEqual(hash.get(), {
         param1: "foo",
-        param2: "bar", 
-        param3: "dar", 
-        param4: "mar" 
+        param2: "bar",
+        param3: "dar",
+        param4: "mar"
     });
 });
 
 test('Remove one', function() {
     equals(hash.get('param2'), "bar");
     hash.remove('param2');
-    equals(hash.get('param2'), undefined); 
+    equals(hash.get('param2'), undefined);
 });
 
 test('Clear all', function() {
