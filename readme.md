@@ -8,7 +8,7 @@ in action at [PNGTextures.com](http://pngtextures.com).
 
 Btw, [follow me (@javve) at Twitter](http://twitter.com/javve) and checkout my other project [List.js](http://listjs.com)
 
-**Notice**:  The main focus of Hash.js is simplcity. This is no tool for your super-ajax-native-feeling-app-with-google-bot-support. If
+**Notice**:  The main focus of Hash.js is simplicity. This is no tool for your super-ajax-native-feeling-app-with-google-bot-support. If
 that's your usage situation, use the awesome [History.js](https://github.com/balupton/history.js).
 
 ## Usage
